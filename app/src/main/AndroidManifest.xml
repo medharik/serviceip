@@ -13,19 +13,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".SchoolAddress">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <service android:name=".ServicePhp" />
         <service
             android:name=".IntentServiceDb"
             android:exported="false" />
-
-        <activity android:name="com.harik.cesamaster.MyIpAddress"></activity>
+<service android:name="com.harik.cesamaster.ServiceIp"></service>
+        <activity android:name="com.harik.cesamaster.MyIpAddress">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
